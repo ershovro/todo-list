@@ -18,7 +18,7 @@ const buildHTMLPage = () =>
             <title>Application todo-list</title>
         </head>
         <body>
-            <div id="root">There will be a super application.</div>
+            <div id="root">There will be a super application!</div>
             <script src="/bundle.js"></script>
         </body>
       </html>

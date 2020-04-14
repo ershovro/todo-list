@@ -36,7 +36,7 @@ describe('<Filter /> ui component', () => {
       it('Clicking default does not cause error', () => {
          const wrapper = enzyme.mount(  <Filter /> );
 
-         wrapper.find('.filter__button').simulate('click');
+         wrapper.find('.filter__button').first().simulate('click');
       });
 
    });
@@ -45,7 +45,7 @@ describe('<Filter /> ui component', () => {
       const _click = jest.fn();
       const wrapper = enzyme.mount(  <Filter onFilterButtonClick={_click}/> );
 
-      wrapper.find('div.filter__button').first().simulate('click');
+      wrapper.find('.filter__button').first().simulate('click');
 
       it('Invoke onSubmit handler', () => {
          expect(_click).toBeCalled();

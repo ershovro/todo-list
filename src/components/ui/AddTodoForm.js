@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const AddTodoForm = ({ oneNewTodo = f => f }) => {
    const _onSubmitHandler = (e) => {
@@ -24,5 +25,8 @@ const AddTodoForm = ({ oneNewTodo = f => f }) => {
    );
 };
 
+AddTodoForm.propTypes = {
+   oneNewTodo: PropTypes.func
+};
 
 export default AddTodoForm;

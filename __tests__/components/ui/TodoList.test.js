@@ -29,7 +29,7 @@ describe('<TodoList /> ui component', () => {
          expect(
             enzyme.mount( <TodoList /> ).
             find('div.todoList').
-               length
+            length
          ).toBe(1)
       });
 

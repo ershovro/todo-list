@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const filterStates = ['All', 'Active', 'Completed'];
+const FILTER_STATES = ['All', 'Active', 'Completed'];
 const resolveClassName = (state, filtered) => (
    `filter__button ${state === filtered ? 'filter__button_selected' : ''}`
 );
 
 const Filter = ({filtered = 'All', onFilterButtonClick = f => f}) => (
    <div className="filter">
-      { filterStates.map( (state, i) =>
+      { FILTER_STATES.map( (state, i) =>
          <span
             key={i}
             className={ resolveClassName(state, filtered) }

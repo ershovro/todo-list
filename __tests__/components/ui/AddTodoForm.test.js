@@ -25,10 +25,10 @@ describe('<AddTodoForm /> ui component', () => {
          ).toMatchSnapshot();
       });*/
 
-      it('Renders div with class .addTodoForm', () => {
+      it('Renders form with class .addTodoForm', () => {
          expect(
             enzyme.mount( <AddTodoForm /> ).
-            find('div.addTodoForm').
+            find('form.addTodoForm').
             length
          ).toBe(1)
       });
@@ -41,27 +41,11 @@ describe('<AddTodoForm /> ui component', () => {
          ).toBe(1)
       });
 
-      it('Renders 1 button inside form', () => {
-         expect(
-            enzyme.mount( <AddTodoForm /> ).
-            find('form button').
-            length
-         ).toBe(1)
-      });
-
-      it('Renders 1 input inside form', () => {
-         expect(
-            enzyme.mount( <AddTodoForm /> ).
-            find('form input').
-            length
-         ).toBe(1)
-      });
-
       it('Submitting default does not cause error', () => {
          const wrapper = enzyme.mount(  <AddTodoForm /> );
 
          wrapper.find('input').first().value = 'Wake up';
-         wrapper.find('form').simulate('click');
+         wrapper.find('form').simulate('submit');
       });
 
    });
@@ -70,8 +54,8 @@ describe('<AddTodoForm /> ui component', () => {
       const _oneNewTodo = jest.fn();
       const wrapper = enzyme.mount(  <AddTodoForm oneNewTodo={_oneNewTodo}/> );
 
-      wrapper.find('input').first().value = 'Wake up';
-      wrapper.find('form').simulate('click');
+      wrapper.find('input[type="text"]').instance().value = 'Wake up';
+      wrapper.find('form').simulate('submit');
 
       it('Invoke onSubmit handler', () => {
          expect(_oneNewTodo).toBeCalled();
@@ -81,8 +65,8 @@ describe('<AddTodoForm /> ui component', () => {
          expect(_oneNewTodo).toBeCalledWith('Wake up');
       });
 
-      it('Reset the title value', () => {
-         expect( wrapper.find('input').instance().value ).
+      it('Reset the text value', () => {
+         expect( wrapper.find('[type="text"]').instance().value ).
          toBe('')
       });
 

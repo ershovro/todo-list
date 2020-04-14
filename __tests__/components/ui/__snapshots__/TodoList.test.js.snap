@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TodoList /> ui component Rendering ui Renders Correctly 1`] = `
+<div
+  className="todoList"
+>
+  <ul>
+    <li
+      className="todoList__item todoList__item_completed"
+      key="0"
+      onClick={[Function]}
+    />
+    <li
+      className="todoList__item todoList__item_completed"
+      key="1"
+      onClick={[Function]}
+    />
+    <li
+      className="todoList__item "
+      key="2"
+      onClick={[Function]}
+    />
+  </ul>
+</div>
+`;

@@ -19,11 +19,11 @@ describe('<Filter /> ui component', () => {
 
    describe('Rendering ui', () => {
 
-      /*it('Renders Correctly', () => {
+      it('Renders Correctly', () => {
          compose(expect, toJSON, enzyme.shallow)(
-            <AddTodoForm />
+            <Filter />
          ).toMatchSnapshot();
-      });*/
+      });
 
       it('Renders div with class .filter', () => {
          expect(

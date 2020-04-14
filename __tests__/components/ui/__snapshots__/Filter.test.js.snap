@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filter /> ui component Rendering ui Renders Correctly 1`] = `
+<div
+  className="filter"
+>
+  <span
+    className="filter__button filter__button_selected"
+    key="0"
+    onClick={[Function]}
+  >
+    All
+  </span>
+  <span
+    className="filter__button "
+    key="1"
+    onClick={[Function]}
+  >
+    Active
+  </span>
+  <span
+    className="filter__button "
+    key="2"
+    onClick={[Function]}
+  >
+    Completed
+  </span>
+</div>
+`;

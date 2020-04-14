@@ -19,11 +19,11 @@ describe('<TodoList /> ui component', () => {
 
    describe('Rendering ui', () => {
 
-      /*it('Renders Correctly', () => {
+      it('Renders Correctly', () => {
          compose(expect, toJSON, enzyme.shallow)(
-            <AddTodoForm />
+            <TodoList todos={_testTodos} />
          ).toMatchSnapshot();
-      });*/
+      });
 
       it('Renders div with class .todoList', () => {
          expect(

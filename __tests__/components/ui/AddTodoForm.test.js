@@ -19,11 +19,11 @@ describe('<AddTodoForm /> ui component', () => {
 
    describe('Rendering ui', () => {
 
-      /*it('Renders Correctly', () => {
+      it('Renders Correctly', () => {
          compose(expect, toJSON, enzyme.shallow)(
             <AddTodoForm />
          ).toMatchSnapshot();
-      });*/
+      });
 
       it('Renders form with class .addTodoForm', () => {
          expect(

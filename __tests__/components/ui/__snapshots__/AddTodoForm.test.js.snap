@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddTodoForm /> ui component Rendering ui Renders Correctly 1`] = `
+<form
+  className="addTodoForm"
+  onSubmit={[Function]}
+>
+  <input
+    required={true}
+    type="text"
+  />
+  <input
+    type="submit"
+    value="Add todo"
+  />
+</form>
+`;

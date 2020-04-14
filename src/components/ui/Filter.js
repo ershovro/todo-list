@@ -12,7 +12,7 @@ const Filter = ({filtered = 'All', onFilterButtonClick = f => f}) => (
          <span
             key={i}
             className={ resolveClassName(state, filtered) }
-            onClick={ () => onFilterButtonClick(state) }>
+            onClick={ () => onFilterButtonClick( state.toLowerCase() ) }>
             {state}
          </span>
        ) }

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const resolveClassName = ({isCompleted}) => (
-   `todoList__item ${isCompleted ? 'todoList__item_completed' : ''}`
+const resolveClassName = ({completed}) => (
+   `todoList__item ${completed ? 'todoList__item_completed' : ''}`
 );
 const TodoList = ({todos = [], toggleCompletedState = f => f}) => (
    <div className="todoList">

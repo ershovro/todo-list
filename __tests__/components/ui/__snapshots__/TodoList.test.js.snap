@@ -9,17 +9,23 @@ exports[`<TodoList /> ui component Rendering ui Renders Correctly 1`] = `
       className="todoList__item todoList__item_completed"
       key="0"
       onClick={[Function]}
-    />
+    >
+      wake up
+    </li>
     <li
       className="todoList__item todoList__item_completed"
       key="1"
       onClick={[Function]}
-    />
+    >
+      to drink coffee
+    </li>
     <li
       className="todoList__item "
       key="2"
       onClick={[Function]}
-    />
+    >
+      work
+    </li>
   </ul>
 </div>
 `;

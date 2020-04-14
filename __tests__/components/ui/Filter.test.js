@@ -52,7 +52,7 @@ describe('<Filter /> ui component', () => {
       });
 
       it('Invoke onSubmit handler with correct arguments', () => {
-         expect(_click).toBeCalledWith('All');
+         expect(_click).toBeCalledWith('all');
       });
 
    });

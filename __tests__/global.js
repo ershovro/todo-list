@@ -5,17 +5,17 @@ import deepFreeze from 'deep-freeze';
 global._testTodos = deepFreeze([
    {
       id: "0",
-      title: "wake up",
-      isCompleted: true
+      text: "wake up",
+      completed: true
    },
    {
       id: "1",
-      title: "to drink coffee",
-      isCompleted: true
+      text: "to drink coffee",
+      completed: true
    },
    {
       id: "2",
-      title: "work",
-      isCompleted: false
+      text: "work",
+      completed: false
    }
 ] )

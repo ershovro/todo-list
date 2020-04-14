@@ -1,0 +1,13 @@
+
+
+
+{
+    todos: [
+        {
+         id
+         text
+         isDone
+        }
+    ],
+    filter: string
+}

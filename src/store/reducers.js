@@ -1,6 +1,6 @@
 import c from '../utils/constants';
 
-export const todo = (state, action = {type: null}) => {
+export const todo = (state = {}, action = {type: null}) => {
    switch (action.type) {
       case c.ADD_TODO:
          return {
@@ -19,7 +19,7 @@ export const todo = (state, action = {type: null}) => {
    }
 };
 
-export const todos = (state, action = {type: null}) => {
+export const todos = (state = [], action = {type: null}) => {
    switch (action.type) {
       case c.ADD_TODO:
          return [
@@ -43,9 +43,9 @@ export const todos = (state, action = {type: null}) => {
    }
 };
 
-export const filter = (state, action = {type: null}) => {
+export const filter = (state = 'all', action = {type: null}) => {
    switch (action.type) {
-      case c.FILTER_TODO:
+      case c.FILTER_TODOS:
          return action.filter;
       default:
          return state;

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../../stylesheets/TodoList.scss';
 
 const resolveClassName = ({completed}) => (
    `todoList__item ${completed ? 'todoList__item_completed' : ''}`

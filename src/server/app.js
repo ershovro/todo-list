@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import fs from 'fs';
 import React from 'react';
 
-
+const staticCss = fs.readFileSync(DIR_STATIC_FILES + '/bundle.css');
 const fileAssets = express.static( DIR_STATIC_FILES );
 const logger = (req, res, next) => {
    console.log(`${req.method} request for '${req.url}'`);
@@ -16,9 +16,10 @@ const buildHTMLPage = () =>
         <head>
             <meta charset="utf-8"/>
             <title>Application todo-list</title>
+            <style>${staticCss}</style>
         </head>
         <body>
-            <div id="root">There will be a super application!</div>
+            <div id="root"></div>
             <script src="/bundle.js"></script>
         </body>
       </html>

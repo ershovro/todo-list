@@ -4,10 +4,10 @@ import deepFreeze from 'deep-freeze';
 
 describe('filter Reducer', () => {
 
-   it('FILTER_TODO success', () => {
+   it('FILTER_TODOS success', () => {
       const state = 'all';
       const action = {
-         type: c.FILTER_TODO,
+         type: c.FILTER_TODOS,
          filter: 'active'
       };
 

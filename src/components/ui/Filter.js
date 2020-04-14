@@ -8,13 +8,13 @@ const resolveClassName = (state, filtered) => (
 
 const Filter = ({filtered = 'All', onFilterButtonClick = f => f}) => (
    <div className="filter">
-      { FILTER_STATES.map( (state, i) =>
-         <span
+      Show: { FILTER_STATES.map( (state, i) =>
+         <button
             key={i}
             className={ resolveClassName(state, filtered) }
             onClick={ () => onFilterButtonClick( state.toLowerCase() ) }>
             {state}
-         </span>
+         </button>
        ) }
    </div>
 );

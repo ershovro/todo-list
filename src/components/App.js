@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stylesheets/App.scss';
 import {TodoListContainer, AddColorFormContainer, FilterContainer} from './containers';
 
 const App = () => (

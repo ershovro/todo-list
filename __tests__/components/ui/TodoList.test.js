@@ -37,7 +37,7 @@ describe('<TodoList /> ui component', () => {
          expect(
             enzyme.mount( <TodoList /> ).
             find('p').text()
-         ).toBe('No Todos. (Add a todo)')
+         ).toBe('No Todos.')
       });
 
       it('clicking on an todo does not cause an error', () => {

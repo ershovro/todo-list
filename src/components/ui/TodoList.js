@@ -9,7 +9,7 @@ const TodoList = ({todos = [], toggleCompletedState = f => f}) => (
    <div className="todoList">
       {
          !todos.length
-            ? <p>No Todos. (Add a todo)</p>
+            ? <p>No Todos.</p>
             : <ul>
                { todos.map( todo =>
                   <li
